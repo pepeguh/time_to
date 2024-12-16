@@ -1,0 +1,129 @@
+:root {
+--blue:#64a6bd;
+--mid-blue:#90a8c3;
+--purple:#ada7c9;
+--mid-pink:#d7b9d5;
+--pink:#f4cae0;
+}
+*{
+    font-family: "Cabin Sketch", sans-serif;
+    font-weight: 700; 
+  
+    /* есть 700 еще */
+    font-style: normal;
+}
+.main_parent{
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-color: var(--mid-pink);
+}
+.main_content{
+    width: 101vw;
+    height: 101vh;
+    background-color: var(--mid-pink);
+    color: var(--blue);
+    box-shadow: 0px 0px 20px 15px rgba(60, 12, 61, 0.5) inset;
+}
+.main_content_timeLeft{
+    width: 101vw;
+    height: 101vh;
+    background-color: black;
+    box-shadow: 0px 0px 20px 15px rgba(60, 12, 61, 0.5) inset;
+    color: rgba(143, 28, 145, 0.8) ;
+}
+.top{
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.top_timeLeft{
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.main_nums{
+    width: 60%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 10px solid #85afd19c;
+    border-radius: 24px;
+    padding: 10px 20px ;
+    animation: 2s linear infinite borderAnim ;
+   
+}
+.kobancheg_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.kobancheg_div span{
+    transition: all 0.2s ease-in-out;
+    
+    font-size: 24px;
+}
+.kobancheg_div video{
+    margin-top: 20px;
+    width: 175%;
+    box-shadow: 0px 0px 20px 15px rgba(60, 12, 61, 0.5) ;
+}
+@keyframes borderAnim{
+    0% {
+        border: 10px solid #85afd19c;
+      }
+    
+      50% {
+        border: 10px solid #d185cd9c;
+      }
+      100% {
+        border: 10px solid #85afd19c;
+      }
+}
+.nums_div{
+    font-size: 42px;
+    cursor: pointer;
+}
+.refresh_img{
+    width: 30px;
+}
+
+
+
+.bot{
+    height: 70%;
+}
+.bot_img_container{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.bot_img_container img{
+    width: 72%;
+    filter: saturate(230%) contrast(130%) hue-rotate(290deg) ;
+    opacity: 60%;
+    border-radius:16px ;
+    animation: 10s linear infinite imgAnim ;
+    /* filter: ; */
+    /* blur(1px)  */
+}
+@keyframes imgAnim{
+    0% {
+        opacity: 50%;
+      }
+    
+      50% {
+        opacity: 20%;
+      }
+      100% {
+        opacity: 50%;
+      }
+}
