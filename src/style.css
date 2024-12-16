@@ -49,14 +49,14 @@
     
 }
 .main_nums{
-    width: 60%;
+    width: 65%;
     height: 60%;
     display: flex;
     align-items: center;
     justify-content: center;
     border: 10px solid #85afd19c;
     border-radius: 24px;
-    padding: 10px 20px ;
+    padding: 10px 10px ;
     animation: 2s linear infinite borderAnim ;
    
 }
@@ -89,8 +89,17 @@
       }
 }
 .nums_div{
-    font-size: 42px;
+    font-size: 40px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nums_div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .refresh_img{
     width: 30px;
@@ -107,23 +116,22 @@ align-items: center;
 justify-content: center;
 }
 .bot_img_container img{
-    width: 72%;
-    filter: saturate(230%) contrast(130%) hue-rotate(290deg) ;
+    width: 74%;
+
     opacity: 60%;
     border-radius:16px ;
     animation: 10s linear infinite imgAnim ;
-    /* filter: ; */
-    /* blur(1px)  */
+
 }
 @keyframes imgAnim{
     0% {
-        opacity: 50%;
+        opacity: 70%;
       }
     
       50% {
         opacity: 20%;
       }
       100% {
-        opacity: 50%;
+        opacity: 70%;
       }
 }

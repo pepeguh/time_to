@@ -109,7 +109,7 @@ function App() {
         </div>
         :
         <div className="bot_img_container">
-          <img src="./pepega.jpg"></img>
+          <img src="./pepega1.jpg"></img>
         </div>
         }
         </div>
